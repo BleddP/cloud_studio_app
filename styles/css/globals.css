@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar__wrapper {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100%;
+  background: #aed9ee;
+  background: radial-gradient(circle, #aed9ee 0%, #5e93d2 100%);
+}
+
+#about-section {
+  width: 100%;
+  height: 100%;
+  background: #eeaeae;
+  background: radial-gradient(circle, #eeaeae 0%, #d25e83 100%);
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  padding: 100px;
+  margin: 0;
+}
+/*# sourceMappingURL=globals.css.map */
