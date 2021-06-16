@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
 
 h1 {
   font-family: 'Staatliches', cursive;
-  padding: 100px;
   margin: 0;
+  color: white;
+}
+
+h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: whitesmoke;
+}
+
+h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: whitesmoke;
+}
+
+p {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+* {
+  font-family: 'Montserrat Alternates', sans-serif;
 }

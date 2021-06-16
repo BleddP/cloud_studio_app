@@ -1,0 +1,15 @@
+.hover-zoom {
+  display: inline-block;
+  background: transparent;
+  transition: all 0.35s ease;
+  &:hover {
+    cursor: pointer;
+    background: rgb(0, 198, 173);
+    transform: scale(1.5);
+    // background: linear-gradient(
+    //   0deg,
+    //   rgba(0, 198, 173, 1) 0%,
+    //   rgba(26, 147, 131, 1) 100%
+    // );
+  }
+}
