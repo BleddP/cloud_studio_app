@@ -17,15 +17,15 @@ const Welcome = () => {
   }, 3000);
 
   return (
-    <section>
-      <div name='welcome-section' id='welcome-section'>
+    <div className='container-scroll'>
+      <section className='welcome-section'>
         <div className='container'>
           <div className='container__center-all'>
             <h1>{hello},</h1>
 
             <h2>
               Are you looking for a short term{' '}
-              <span class='hover-zoom'>Front End</span> developer?
+              <span className='hover-zoom'>Front End</span> developer?
             </h2>
             <h3>
               Cloud Studio Ltd specializes in short-term projects. Our
@@ -35,8 +35,8 @@ const Welcome = () => {
             <p>So let's get started</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

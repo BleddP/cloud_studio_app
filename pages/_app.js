@@ -7,7 +7,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Navbar />
-      <Component {...pageProps} />
+      <div className='scroll-snap-wrapper'>
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }

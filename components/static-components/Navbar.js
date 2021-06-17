@@ -4,26 +4,26 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav>
-      <div class='nav-wrapper'>
-        <Link href='#' class='brand-logo'>
+      <div className='nav-wrapper'>
+        <Link href='#' className='brand-logo'>
           <img
             src='https://icon-library.com/images/cloud-vector-icon/cloud-vector-icon-7.jpg'
             alt='logo'
             style={{ width: 60, marginLeft: 50 }}
           />
         </Link>
-        <ul id='nav-mobile' class='right hide-on-med-and-down'>
+        <ul id='nav-mobile' className='right hide-on-med-and-down'>
           <li>
-            <Link href='sass.html'>Frameworks</Link>
+            <Link href='#'>Frameworks</Link>
           </li>
           <li>
-            <Link href='badges.html'>Recent Projects</Link>
+            <Link href='#'>Recent Projects</Link>
           </li>
           <li>
-            <Link href='collapsible.html'>IR35</Link>
+            <Link href='#'>IR35</Link>
           </li>
           <li>
-            <Link href='collapsible.html'>Contact</Link>
+            <Link href='#'>Contact</Link>
           </li>
         </ul>
       </div>

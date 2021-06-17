@@ -5,6 +5,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -24,18 +25,37 @@ section {
   margin: 0px;
 }
 
-#welcome-section {
+.welcome-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #557b9e;
   background: radial-gradient(circle, #557b9e 0%, #248d9e 0%, #196b73 64%, #042d27 100%);
 }
 
-#about-section {
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #eeaeae;
   background: radial-gradient(circle, #eeaeae 0%, #d25e83 100%);
+}
+
+.where-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  background: #557b9e;
+  background: radial-gradient(circle, #557b9e 0%, #248d9e 0%, #196b73 64%, #042d27 100%);
 }
 
 h1 {
@@ -62,20 +82,15 @@ p {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.container__center-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.scroll-snap-wrapper {
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   height: 100vh;
 }
 
@@ -91,5 +106,35 @@ p {
   background: #00c6ad;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.scroll-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
+
+.scroll-menu__item {
+  color: white;
+  text-align: right;
+  position: relative;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.scroll-menu__item:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.scroll-menu .active span {
+  color: red;
 }
 /*# sourceMappingURL=globals.css.map */

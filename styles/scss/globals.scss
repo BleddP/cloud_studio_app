@@ -2,6 +2,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -23,9 +24,11 @@ section {
   }
 }
 // ------- Sections
-#welcome-section {
+.welcome-section {
+  display: flex;
+  scroll-snap-align: start;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgb(85, 123, 158);
   background: radial-gradient(
     circle,
@@ -36,9 +39,11 @@ section {
   );
 }
 
-#about-section {
+.about-section {
+  display: flex;
+  scroll-snap-align: start;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgb(238, 174, 174);
   background: radial-gradient(
     circle,
@@ -46,8 +51,23 @@ section {
     rgba(210, 94, 131, 1) 100%
   );
 }
+.where-section {
+  display: flex;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  background: rgb(85, 123, 158);
+  background: radial-gradient(
+    circle,
+    rgba(85, 123, 158, 1) 0%,
+    rgba(36, 141, 158, 1) 0%,
+    rgba(25, 107, 115, 1) 64%,
+    rgba(4, 45, 39, 1) 100%
+  );
+}
 
 // -------- Typography
 @import './settings/typography.scss';
 @import './settings/containers.scss';
 @import './settings/animations.scss';
+@import './settings/navigation.scss';

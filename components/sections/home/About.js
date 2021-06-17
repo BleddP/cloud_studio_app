@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Welcome = () => {
+const AboutUs = () => {
   return (
-    <section>
-      <div name='about-section' id='about-section'>
+    <div className='container-scroll' id='about-section' name='about-section'>
+      <section className='about-section'>
         <div className='container'>
           <h1>About Us</h1>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
-export default Welcome;
+export default AboutUs;

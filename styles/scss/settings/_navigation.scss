@@ -1,0 +1,24 @@
+.scroll-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+  right: 10px;
+
+  &__item {
+    color: white;
+    text-align: right;
+    position: relative;
+    transition: 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+
+  .active {
+    span {
+      color: red;
+    }
+  }
+}

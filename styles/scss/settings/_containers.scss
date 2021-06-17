@@ -1,9 +1,9 @@
-.container {
-  &__center-all {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
+* {
+  box-sizing: border-box;
+}
+
+.scroll-snap-wrapper {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
 }
