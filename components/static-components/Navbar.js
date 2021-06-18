@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav>
-      <div className='nav-wrapper'>
+      <div className='nav-wrapper transparent'>
         <Link href='#' className='brand-logo'>
           <img
             src='https://icon-library.com/images/cloud-vector-icon/cloud-vector-icon-7.jpg'

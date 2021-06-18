@@ -7,3 +7,29 @@
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
+
+.y-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  &__col {
+  }
+}
+
+.flex-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.full-page {
+  height: 100vh;
+}

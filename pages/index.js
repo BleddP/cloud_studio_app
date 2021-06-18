@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-// Libs
-import Scroll from 'react-scroll';
+// Navigation
+import SideNav from '../components/static-components/SideNav';
 
 // Components
 import Welcome from '../components/sections/home/Welcome';
@@ -10,7 +10,28 @@ import About from '../components/sections/home/About';
 import Where from '../components/sections/home/Where';
 
 const Home = () => {
-  const Link = Scroll.Link;
+  const links = [
+    {
+      to: 'welcome-section',
+      menuLabel: 'Welcome',
+    },
+    {
+      to: 'about-section',
+      menuLabel: 'About',
+    },
+    {
+      to: 'where-section',
+      menuLabel: 'Where',
+    },
+    {
+      to: 'who-section',
+      menuLabel: 'Who',
+    },
+    {
+      to: 'contact-section',
+      menuLabel: 'Contact',
+    },
+  ];
 
   return (
     <Fragment>
@@ -31,47 +52,10 @@ const Home = () => {
         />
       </Head>
       <body>
-        <div id='scroll-menu' className='scroll-menu'>
-          <Link
-            activeClass='active'
-            spy={true}
-            smooth={true}
-            to='welcome-section'
-          >
-            <span className='scroll-menu__item'>Welcome</span>
-          </Link>
-          <Link
-            activeClass='active'
-            spy={true}
-            smooth={true}
-            to='about-section'
-          >
-            <span className='scroll-menu__item'>About</span>
-          </Link>
-          <Link
-            activeClass='active'
-            spy={true}
-            smooth={true}
-            to='where-section'
-          >
-            <span className='scroll-menu__item'>Where</span>
-          </Link>
-          <Link activeClass='active' spy={true} smooth={true} to='who-section'>
-            <span className='scroll-menu__item'>Who</span>
-          </Link>
-          <Link
-            activeClass='active'
-            spy={true}
-            smooth={true}
-            to='contact-section'
-          >
-            <span className='scroll-menu__item'>Contact</span>
-          </Link>
-        </div>
+        <SideNav links={links} />
         <Welcome />
         <About />
         <Where />
-
         <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
       </body>
     </Fragment>

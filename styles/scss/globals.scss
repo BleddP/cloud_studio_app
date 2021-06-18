@@ -60,10 +60,18 @@ section {
   background: radial-gradient(
     circle,
     rgba(85, 123, 158, 1) 0%,
-    rgba(36, 141, 158, 1) 0%,
-    rgba(25, 107, 115, 1) 64%,
-    rgba(4, 45, 39, 1) 100%
+    rgba(36, 104, 158, 1) 0%,
+    rgba(25, 54, 115, 1) 64%,
+    rgba(0, 0, 0, 1) 100%
   );
+}
+
+.hello-title {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
 }
 
 // -------- Typography
@@ -71,3 +79,4 @@ section {
 @import './settings/containers.scss';
 @import './settings/animations.scss';
 @import './settings/navigation.scss';
+@import './settings/globals.scss';

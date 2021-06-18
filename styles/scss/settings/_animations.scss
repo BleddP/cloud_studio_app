@@ -13,3 +13,35 @@
     // );
   }
 }
+
+.intersection {
+  &__fade {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 0.5s ease;
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__slide {
+    &--right {
+      transform: translateX(200%);
+      transition: all 0.5s ease;
+      transition-delay: 0.25s;
+      &.active {
+        transform: translateX(0px);
+      }
+    }
+
+    &--left {
+      transform: translateX(200%);
+      transition: all 0.5s ease;
+      transition-delay: 0.25s;
+      &.active {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
